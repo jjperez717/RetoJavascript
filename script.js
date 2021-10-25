@@ -20,12 +20,16 @@ const cn = document.getElementById("cn");
 const fnA1 = () => {
   if (letters.innerHTML == "") {
     letters.innerHTML = "A";
+  }else {
+    alert("faltan letras");
   }
 };
 
 const fn1 = () => {
   if (letters.innerHTML == "ABCDEFGHIJ" && numbers.innerHTML == "") {
     numbers.innerHTML = "1";
+  }else {
+    alert("faltan números");
   }
 };
 const fnB2 = () => {
@@ -111,7 +115,6 @@ const fnG7 = () => {
     alert("faltan letras");
   }
 
-  
 };
 const fn7 =() => {
   if (numbers.innerHTML == "123456") {
