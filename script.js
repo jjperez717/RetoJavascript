@@ -20,8 +20,6 @@ const cn = document.getElementById("cn");
 const fnA1 = () => {
   if (letters.innerHTML == "") {
     letters.innerHTML = "A";
-  }else {
-    alert("faltan letras");
   }
 };
 
@@ -35,8 +33,6 @@ const fn1 = () => {
 const fnB2 = () => {
   if (letters.innerHTML == "A") {
     letters.innerHTML += "B"; //letters.innerHTML = letters.innerHTML + "B"
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -51,8 +47,6 @@ const fn2 =() => {
 const fnC3 = () => {
   if (letters.innerHTML == "AB") {
     letters.innerHTML += "C";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -67,8 +61,6 @@ const fn3 =() => {
 const fnD4 = () => {
   if (letters.innerHTML == "ABC") {
     letters.innerHTML += "D";
-  } else {
-    alert("faltan letras");
   }
 };
 const fn4 =() => {
@@ -81,10 +73,7 @@ const fn4 =() => {
 const fnE5 = () => {
   if (letters.innerHTML == "ABCD") {
     letters.innerHTML += "E";
-  } else {
-    alert("faltan letras");
   }
-
 };
 const fn5 =() => {
   if (numbers.innerHTML == "1234") {
@@ -96,8 +85,6 @@ const fn5 =() => {
 const fnF6 = () => {
   if (letters.innerHTML == "ABCDE") {
     letters.innerHTML += "F";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -111,8 +98,6 @@ const fn6 =() => {
 const fnG7 = () => {
   if (letters.innerHTML == "ABCDEF") {
     letters.innerHTML += "G";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -126,8 +111,6 @@ const fn7 =() => {
 const fnH8 = () => {
   if (letters.innerHTML == "ABCDEFG") {
     letters.innerHTML += "H";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -141,8 +124,6 @@ const fn8 =() => {
 const fnI9 = () => {
   if (letters.innerHTML == "ABCDEFGH") {
     letters.innerHTML += "I";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -156,8 +137,6 @@ const fn9 =() => {
 const fnJ0 = () => {
   if (letters.innerHTML == "ABCDEFGHI") {
     letters.innerHTML += "J";
-  } else {
-    alert("faltan letras");
   }
 
 };
@@ -170,9 +149,11 @@ const fn0 =() => {
 };
 const fnCL = () => {
   letters.innerHTML = "";
+  numbers.innerHTML ="";
 };
 const fnCN = () => {
   letters.innerHTML = "";
+  numbers.innerHTML ="";
 };
 
 //eventos
@@ -180,70 +161,111 @@ a1.onclick = () => {
   if (letters.innerHTML == "") {
     fnA1();
   }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
     fn1();
+    }else{
+    alert("faltan letras");
+
+    }
   }
 };
 b2.onclick = () => {
   if (letters.innerHTML =="A") {
     fnB2();
   }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
     fn2();
+  }else{
+    alert("faltan letras");
   }
+}
 };
 c3.onclick = () => {
   if (letters.innerHTML =="AB") {
   fnC3();
   }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
     fn3();
+    }else{
+    alert("faltan letras");
+    }
   }
 };
 d4.onclick = () => {
   if (letters.innerHTML == "ABC") {
   fnD4();
   }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
     fn4();
+    }else{
+    alert("faltan letras");
+    }
   }
 };
 e5.onclick = () => {
   if (letters.innerHTML == "ABCD") {
   fnE5();
   }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
     fn5();
+    }else{
+    alert("faltan letras");
+    }
   }
 };
 f6.onclick = () => {
   if (letters.innerHTML == "ABCDE") {
     fnF6();
     }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
       fn6();
+    }else{
+    alert("faltan letras");
+    }
     }
 };
 g7.onclick = () => {
   if (letters.innerHTML == "ABCDEF") {
     fnG7();
     }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
       fn7();
+    }else{
+    alert("faltan letras");
+    }
     }
 };
 h8.onclick = () => {
   if (letters.innerHTML == "ABCDEFG") {
     fnH8();
     }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
       fn8();
+    }else{
+    alert("faltan letras");
+    }
     }
 };
 i9.onclick = () => {
   if (letters.innerHTML == "ABCDEFGH") {
     fnI9();
     }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
       fn9();
+    }else{
+    alert("faltan letras");
+    }
     }
 };
 j0.onclick = () => {
   if (letters.innerHTML == "ABCDEFGHI") {
     fnJ0();
     }else{
+    if (letters.innerHTML == "ABCDEFGHIJ" ) {
       fn0();
+    }else{
+    alert("faltan letras");
+    }
     }
 };
 cl.onclick = () => {
