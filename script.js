@@ -21,7 +21,9 @@ const fnA1 = () => {
   if (letters.innerHTML == "") {
     letters.innerHTML = "A";
   }
+};
 
+const fn1 = () => {
   if (letters.innerHTML == "ABCDEFGHIJ" && numbers.innerHTML == "") {
     numbers.innerHTML = "1";
   }
@@ -33,6 +35,8 @@ const fnB2 = () => {
     alert("faltan letras");
   }
 
+};
+const fn2 =() => {
   if (numbers.innerHTML == "1") {
     numbers.innerHTML += "2";
   } else {
@@ -47,6 +51,8 @@ const fnC3 = () => {
     alert("faltan letras");
   }
 
+};
+const fn3 =() => {
   if (numbers.innerHTML == "12") {
     numbers.innerHTML += "3";
   } else {
@@ -60,7 +66,8 @@ const fnD4 = () => {
   } else {
     alert("faltan letras");
   }
-
+};
+const fn4 =() => {
   if (numbers.innerHTML == "123") {
     numbers.innerHTML += "4";
   } else {
@@ -74,6 +81,8 @@ const fnE5 = () => {
     alert("faltan letras");
   }
 
+};
+const fn5 =() => {
   if (numbers.innerHTML == "1234") {
     numbers.innerHTML += "5";
   } else {
@@ -87,6 +96,8 @@ const fnF6 = () => {
     alert("faltan letras");
   }
 
+};
+const fn6 =() => {
   if (numbers.innerHTML == "12345") {
     numbers.innerHTML += "6";
   } else {
@@ -100,6 +111,9 @@ const fnG7 = () => {
     alert("faltan letras");
   }
 
+  
+};
+const fn7 =() => {
   if (numbers.innerHTML == "123456") {
     numbers.innerHTML += "7";
   } else {
@@ -113,6 +127,8 @@ const fnH8 = () => {
     alert("faltan letras");
   }
 
+};
+const fn8 =() => {
   if (numbers.innerHTML == "1234567") {
     numbers.innerHTML += "8";
   } else {
@@ -126,6 +142,8 @@ const fnI9 = () => {
     alert("faltan letras");
   }
 
+};
+const fn9 =() => {
   if (numbers.innerHTML == "12345678") {
     numbers.innerHTML += "9";
   } else {
@@ -139,6 +157,8 @@ const fnJ0 = () => {
     alert("faltan letras");
   }
 
+};
+const fn0 =() => {
   if (numbers.innerHTML == "123456789") {
     numbers.innerHTML += "0";
   } else {
@@ -154,34 +174,74 @@ const fnCN = () => {
 
 //eventos
 a1.onclick = () => {
-  fnA1();
+  if (letters.innerHTML == "") {
+    fnA1();
+  }else{
+    fn1();
+  }
 };
 b2.onclick = () => {
-  fnB2();
+  if (letters.innerHTML =="A") {
+    fnB2();
+  }else{
+    fn2();
+  }
 };
 c3.onclick = () => {
+  if (letters.innerHTML =="AB") {
   fnC3();
+  }else{
+    fn3();
+  }
 };
 d4.onclick = () => {
+  if (letters.innerHTML == "ABC") {
   fnD4();
+  }else{
+    fn4();
+  }
 };
 e5.onclick = () => {
+  if (letters.innerHTML == "ABCD") {
   fnE5();
+  }else{
+    fn5();
+  }
 };
 f6.onclick = () => {
-  fnF6();
+  if (letters.innerHTML == "ABCDE") {
+    fnF6();
+    }else{
+      fn6();
+    }
 };
 g7.onclick = () => {
-  fnG7();
+  if (letters.innerHTML == "ABCDEF") {
+    fnG7();
+    }else{
+      fn7();
+    }
 };
 h8.onclick = () => {
-  fnH8();
+  if (letters.innerHTML == "ABCDEFG") {
+    fnH8();
+    }else{
+      fn8();
+    }
 };
 i9.onclick = () => {
-  fnI9();
+  if (letters.innerHTML == "ABCDEFGH") {
+    fnI9();
+    }else{
+      fn9();
+    }
 };
 j0.onclick = () => {
-  fnJ0();
+  if (letters.innerHTML == "ABCDEFGHI") {
+    fnJ0();
+    }else{
+      fn0();
+    }
 };
 cl.onclick = () => {
   fnCL();
